@@ -1,0 +1,23 @@
+{
+  "name": "employee",
+  "version": "1.0.0",
+  "description": "employee details",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Gomathi T",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.407.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "guid": "0.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
