@@ -1,4 +1,4 @@
-# employee
+# EmployeeManagement
 # __Employee Management Application ReadMe__
 ---
 # __Introduction:__
@@ -6,14 +6,14 @@ Employee Management application is a simple full stack React application with a 
 
 # __Quick Start__
 ## Clone the repository
-Git clone [Link] ( https://github.com/GomathiTheetha/employee.git )
+Git clone [Link] ( https://github.com/GomathiTheetha/EmployeeManagement.git )
 
 ## Go inside the directory
-cd employee
+cd EmployeeManagement
 
 ## Folder Structure
 •	Client side:
-All the frontend code will be in client directory. [Reference: \employee\client\src\components\ and \employee\client\src]. 
+All the frontend code will be in client directory. [Reference: \EmployeeManagement\client\src\components\ and \EmployeeManagement\client\src]. 
 List of files:
 1.	\client\src\App.js
 2.	\client\src\components\employee\employee.css
@@ -29,23 +29,23 @@ Note: Below files are obsolete files.
 2.	\client\src\App.js
 
 •	Server Side:
-	Backend Node.js/Express code will be in server.js file [Reference: \employee\server.js]. Express is a web application framework for Node.js. It is used to build our backend API's. 
+	Backend Node.js/Express code will be in server.js file [Reference: \EmployeeManagement\server.js]. Express is a web application framework for Node.js. It is used to build our backend API's. 
 List of files:
-1.	\employee\package.js -> created during “npm init “ script run.
-2.	\employee\server.js
-3.  \employee\config\config.json -> contains configuration details of DynamoDB 
+1.	\EmployeeManagement\package.js -> created during “npm init “ script run.
+2.	\EmployeeManagement\server.js
+3.  \EmployeeManagement\config\config.json -> contains configuration details of DynamoDB 
 
 ## Run the application
 In the development mode, we will have 2 servers running. One for the front-end code 
 and does live reloading. Another one is the server-side Express code will be served by a node server using nodemon which helps in automatically restarting the server whenever server-side code changes.
 	
     Client side: 
-•	.\employee\client> npm start ( “start” will refer client side package.json file and run “react-scripts start”)
+•	.\EmployeeManagement\client> npm start ( “start” will refer client side package.json file and run “react-scripts start”)
 
 •	The above command will automatically launch chrome “https:\\localhost:3000”
 
 	Server side:
-•	.\employee>npm run server (server will refer server-side package.json file and run “nodemon server.js”)
+•	.\EmployeeManagement>npm run server (server will refer server-side package.json file and run “nodemon server.js”)
 
 •	This starts a server and listens on port 5000 for connections. 
 
@@ -60,27 +60,26 @@ and does live reloading. Another one is the server-side Express code will be ser
 
 •	cmdprompt> npm install -g create-react-app
 
-•	cmdprompt> cd employee
+•	cmdprompt> cd EmployeeManagement
 
-•	employee> npm init
+•	EmployeeManagement> npm init
 
-•	employee> npm install
+•	EmployeeManagement> npm install
 
-•	employee>npm install express
+•	EmployeeManagement>npm install express
 
-•	employee>npm install aws-sdk
+•	EmployeeManagement>npm install aws-sdk
 
-•	employee>npm install guid 
+•	EmployeeManagement>npm install guid 
 
-•	employee> create-react-app client
+•	EmployeeManagement> create-react-app client
 
-•	employee> cd client
+•	EmployeeManagement> cd client
 
-•	employee\client>npm install axios
+•	EmployeeManagement\client>npm install axios
 
 # __Open Issues:__
 1. UI controls validation
 2. UI related issues such as alignment, etc.
-3. Configuration details - related to DynamoDB has to be placed in separate config file. NodeJS has to read the file before configuring DynamoDB.
-4. On click of Read, “Loading…” message has to be displayed till the values from backend are fetched and populated in the UI controls.
-5. On complete of Update or Delete operation, proper message to be displayed to the user. Right now, console log conveys the message.
+3. On click of Read, “Loading…” message has to be displayed till the values from backend are fetched and populated in the UI controls.
+4. On complete of Update or Delete operation, proper message to be displayed to the user. Right now, console log conveys the message.
